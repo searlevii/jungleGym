@@ -1,3 +1,4 @@
+//------------Jodi code start -----------------------------------------
 class Trainer{
   constructor(){
     this.pokemon=[];
@@ -92,3 +93,4 @@ let ability =answer.data.abilities[0].ability.name
 let Pangoro = new Pokemon( name, sprite, hp, attack ,defense, ability );
 Pangoro.display();
 })
+//------------Jodi code end -----------------------------------------
