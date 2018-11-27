@@ -1,3 +1,39 @@
+
+img {
+  background-color: black;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+.rt {
+  background-color: black;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+.st {
+  background-color: black;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+#trainer {
+  background-color: black;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+.jt {
+  background-color: black;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+=======
 html{
   background: url(forest4.jpg);
   background-size: cover;
@@ -53,4 +89,5 @@ html{
 #five{
   bottom:320px;
   left: 780px;
+
 }
