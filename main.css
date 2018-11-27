@@ -36,7 +36,7 @@ box-shadow: #000000ab 5px;
   height: 500px;
   width: 500px;
   border-radius: 50%;
-  background-image: linear-gradient(#29ab87, #3b6064, #364958);
+  background-image: linear-gradient(#29ab87aa, #3b6064aa, #364958aa);
   position:absolute;
   top: 80px;
   left: 400px;
@@ -48,31 +48,31 @@ box-shadow: #000000ab 5px;
   animation: circleAround 4s;
 }
 #two{
-  left: 80px;
+  left: 60px;
   top: 45px;
   opacity: 1;
   animation: circleAround 4s;
  }
 #three{
   top: 90px;
-  left: 140px;
+  left: 105px;
   opacity: 1;
   animation: circleAround 4s;
  }
 #four{
-  bottom: 500px;
+  bottom: 510px;
   left: 735px;
   opacity: 1;
   animation: circleAround 4s;
  }
 #five{
-  bottom:250px;
+  bottom:255px;
   left: 735px;
   opacity: 1;
   animation: circleAround 4s;
 }
 #six{
-  bottom: 625px;
+  bottom: 635px;
   left: 795px;
   opacity: 1;
   animation: circleAround 4s;
@@ -80,10 +80,10 @@ box-shadow: #000000ab 5px;
 @keyframes circleAround{
     0% {
       transform: rotate(0deg) translateX(100px);
-      opacity: 0;
+      opacity: 0.1;
     }
     100% {
-      transform: rotate(360deg) translateX(10px);
+      transform: rotate(360deg) translateX(0px);
       opacity: 1;
     }
   }
@@ -105,22 +105,22 @@ box-shadow: #000000ab 5px;
 #Ability{
   top: 215px;
   left: 80px;
-  background-color: orange;
+  background-color: #55828b;
 }
 #Health{
-  background-color: pink;
+  background-color: #3b6064;
   left:250px;
   top: 210px;
 }
 #Attack{
-  background-color: purple;
+  background-color: #29ab87;
   left: 250px;
   top: 100px;
 }
 #Defense{
   top: 95px;
   left: 80px;
-  background-color: black;
+  background-color: #364958;
 }
 #image img{
   width:150px;
@@ -165,5 +165,4 @@ box-shadow: #000000ab 5px;
     height: 150px;
     width: 150px;
     object-fit: contain;
-  =======
->>>>>>> 1810a81d17540b0a32b857743102052c4420a481
+  }
