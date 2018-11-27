@@ -42,26 +42,7 @@ class Pokemon {
           pokemonAbilities.innerHTML = "Abilities: " + this.abilities;
           this.element.appendChild(pokemonAbilities);
           this.container.appendChild(this.element);
-
-
-    }
-
-    moreInfo(){
-          console.log( "this shouldbe a Button");
-      let showMore= document.createElement('button');
-          showMore.innerHTML = "More Stats" ;
-          this.element.appendChild(showMore);
-          this.container.appendChild(this.element);
-
-          show(){
-
-            let newStats = document.createElement('')
-          }
-
-
-
-    }
-
+        }
   }
 
 
@@ -88,7 +69,7 @@ axios.get('https://fizal.me/pokeapi/api/v2/name/nidorino.json')
 
               let nidorino = new Pokemon( name, hp, attack, defense, abilities, "ok");
               nidorino.display();
-              nidorino.moreInfo();
+            
               console.log(name, hp, attack, defense);
 
 
