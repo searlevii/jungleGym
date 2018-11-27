@@ -5,14 +5,14 @@ html{
 }
 #box{
   width: 1000px;
-  height: 750px;
+  height: 600px;
   background-color: white;
   margin: 20px;
   position:relative;
   left: 100px;
   padding: 10px;
   filter: opacity(60%);
-  border-radius: 98%;
+  border-radius: 20px;
 
 }
 .circle{
@@ -30,26 +30,27 @@ html{
   border-radius: 50%;
   background-color: red;
   position:absolute;
-  top: 100px;
+  top: 80px;
   left: 400px;
+  border: 10px groove black;
 
 
 }
  #one{
-  left: 200px;
+  left: 150px;
 }
  #two{
-   left: 100px;
+   left: 80px;
  }
  #three{
    top: 30px;
    left: 100px;
  }
  #four{
-   bottom: 400px;
-   left: 750px;
+   bottom: 500px;
+   left: 730px;
  }
 #five{
-  bottom:300px;
-  left: 800px;
+  bottom:320px;
+  left: 780px;
 }
