@@ -15,7 +15,7 @@ html{
   padding: 10px;
   filter: opacity(60%);
   border-radius: 20px;
-
+border: 10px groove black;
 }
 .circle{
   width: 150px;
@@ -25,6 +25,7 @@ html{
   border: 10px red groove;
   position: relative;
   filter: opacity(100%);
+  padding: 1px;
 }
 #bigCircle{
   height: 500px;
