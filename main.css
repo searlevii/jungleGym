@@ -36,8 +36,8 @@ box-shadow: #000000ab 5px;
   width: 500px;
   border-radius: 50%;
   background-color: red;
-  position:absolute;
-  top: 80px;
+  position:relative;
+  bottom: 600px;
   left: 400px;
   border: 10px groove black;
 }
@@ -124,7 +124,7 @@ box-shadow: #000000ab 5px;
   border: 4px groove white;
 }
 
-  img {
+  .circle img {
     background-color: black;
     border-radius: 50%;
     height: 150px;
@@ -158,6 +158,12 @@ box-shadow: #000000ab 5px;
     height: 150px;
     width: 150px;
     object-fit: contain;
+  }
+  #logo img{
+    position: relative;
+    height: 100px;
+  width: 500px;
+    border-radius: none;
   }
 
     @keyframes circleAround{
