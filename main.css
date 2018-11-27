@@ -5,15 +5,17 @@ html{
   background-size: cover;
   background-repeat: no-repeat;
 }
+#opacity {
+  filter: opacity(100%);
+}
 #box{
   width: 1000px;
   height: 600px;
-  background-color: white;
+  background-color: #FFFFFFAA ;
   margin: 20px;
   position:relative;
   left: 100px;
   padding: 10px;
-  filter: opacity(60%);
   border-radius: 20px;
 border: 10px groove black;
 }
@@ -25,7 +27,11 @@ border: 10px groove black;
   border: 10px red groove;
   position: relative;
   filter: opacity(100%);
+<<<<<<< HEAD
   padding: 1px;
+=======
+  box-shadow: 5px 5px 1px 1px #00000066;
+>>>>>>> a35d3f0b38af5b69118ebe3b78c2c86a74307806
 }
 #bigCircle{
   height: 500px;
@@ -39,25 +45,36 @@ border: 10px groove black;
 
 
 }
- #one{
-  left: 150px;
+#one{
+  left: 140px;
+  opacity: 1;
 }
- #two{
-   left: 80px;
+#two{
+  left: 80px;
+  top: 45px;
+  opacity: 1;
  }
- #three{
-   top: 30px;
-   left: 100px;
+#three{
+  top: 90px;
+  left: 140px;
+  opacity: 1;
  }
- #four{
-   bottom: 500px;
-   left: 730px;
+#four{
+  bottom: 500px;
+  left: 735px;
+  opacity: 1;
  }
 #five{
-  bottom:320px;
-  left: 780px;
-
+  bottom:250px;
+  left: 735px;
+  opacity: 1;
 }
+#six{
+  bottom: 625px;
+  left: 795px;
+  opacity: 1;
+}
+
 .Rectangle{
   background-color: white;
   width: 150px;
