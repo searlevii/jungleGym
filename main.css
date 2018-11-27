@@ -76,18 +76,42 @@ html{
   width: 150px;
   height: 50px;
   border: 4px groove black;
+  position: relative;
+
+}
+#Name{
+  top: 50px;
+  left: 170px;
 }
 #Ability{
-  position: relative;
-  top: 300px;
-  left: 30px;
-
-
+  top: 215px;
+  left: 80px;
+  background-color: orange;
 }
-#Defense{}
-#Attack{}
-#Name{}
-#Health{}
+#Health{
+  background-color: pink;
+  left:250px;
+  top: 210px;
+}
+#Attack{
+  background-color: purple;
+  left: 250px;
+  top: 100px;
+}
+#Defense{
+  top: 95px;
+  left: 80px;
+  background-color: black;
+}
+#image img{
+  width:150px;
+  height: 150px;
+  position: absolute;
+  top: 110px;
+  left:165px;
+  border: 4px groove white;
+}
+
   img {
     background-color: black;
     border-radius: 50%;
