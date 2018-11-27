@@ -1,4 +1,7 @@
 
+//------------Jodi code start -----------------------------------------
+
+
 // Arleth's code//
 axios.get("https://fizal.me/pokeapi/api/v2/name/charmander.json")
 .then(function(response){
@@ -8,10 +11,8 @@ axios.get("https://fizal.me/pokeapi/api/v2/name/charmander.json")
           response.data.stats[3].base_stat,
           response.data.stats[4].base_stat,
           response.data.stats[5].base_stat,
-          response.data.abilities[0].ability
+          response.data.abilities[0].ability)
 
-
-      )
      document.getElementById('c1').innerHTML= "id  - "+charmander.id;
       document.getElementById('c2').innerHTML="name - "+charmander.name;
       document.getElementById('c3').innerHTML="defense - "+charmander.defense;
@@ -19,28 +20,28 @@ axios.get("https://fizal.me/pokeapi/api/v2/name/charmander.json")
       document.getElementById('c5').innerHTML="hp - "+charmander.hp;
 
 });
-class trainor {
-  constructor(){
-    this.pokemon=[]
-  }
-  all(){
-    return this.pokemon;
-  }
-  add(train){
-    this.pokemon.push(train);
-  }
-}
-get(name){
-  for(let i=o; i<this.pokemon.length; i++){
-    if(name == this.pokemon[i].name){
-      return this.pokemon[i]
-    }
-  }
-}
-let Jim = new trainer();
-
-// end of Arleth's code //
-
+// class trainer {
+//   constructor(){
+//     this.pokemon=[]
+//   }
+//   all(){
+//     return this.pokemon;
+//   }
+//   add(train){
+//     this.pokemon.push(train);
+//   }
+// }
+// get(name){
+//   for(let i=o; i<this.pokemon.length; i++){
+//     if(name == this.pokemon[i].name){
+//       return this.pokemon[i]
+//     }
+//   }
+// }
+//
+//
+// // end of Arleth's code //
+-------------------------------------------------------------------------------------------
 class Trainer{
   constructor(){
     this.pokemon=[];
@@ -60,9 +61,12 @@ class Trainer{
     }
   }
 }
-
+let Jim = new Trainer();
 let King = new Trainer();
 let Evelynn = new Trainer();
+let Andre = new Trainer()
+let RashellHell = new Trainer()
+-------------------------------------------------------------------------------------------------------------
 
 //Axios client provides data for Pokemon via the APIs//
 axios.get("http://fizal.me/pokeapi/api/v2/name/tyrantrum.json")
@@ -161,21 +165,21 @@ axios.get('https://fizal.me/pokeapi/api/v2/name/ariados.json')
 
 });
 
-class Pokemon {
-  constructor(name, sprite, hp, attack, defense, abilities){
-    this.name = name;
-    this.sprite = sprite;
-    this.hp = hp;
-    this.attack = attack;
-    this.defense = defense;
-    this.abilities = abilities;
-    this.element1 = document.getElementById("element1");
-    this.element2 = document.getElementById("element2");
-    this.element3 = document.getElementById("element3");
-    this.container = document.getElementById("status1");
-    this.container2 = document.getElementById("status2");
-    this.container3 = document.getElementById("status3");
-  }
+// class Pokemon {
+//   constructor(name, sprite, hp, attack, defense, abilities){
+//     this.name = name;
+//     this.sprite = sprite;
+//     this.hp = hp;
+//     this.attack = attack;
+//     this.defense = defense;
+//     this.abilities = abilities;
+//     this.element1 = document.getElementById("element1");
+//     this.element2 = document.getElementById("element2");
+//     this.element3 = document.getElementById("element3");
+//     this.container = document.getElementById("status1");
+//     this.container2 = document.getElementById("status2");
+//     this.container3 = document.getElementById("status3");
+//   }
   sprite() {
     let div = document.getElementById("greninja");
     let img = document.createElement("img");
@@ -215,6 +219,55 @@ class Pokemon {
     hpEl.innerHTML= "Health: " + this.hp;
     console.log(hpEl)
   }
+
+
+}
+axios.get("http://fizal.me/pokeapi/api/v2/name/tyrantrum.json")
+.then(function (answer){
+console.log(answer);
+//let so you can call it later in param
+let name = answer.data.name;
+console.log(answer.data.name);
+let sprite = answer.data.sprites.front_default;
+let hp = answer.data.stats[5].base_stat;
+let attack =  answer.data.stats[4].base_stat;
+let defense = answer.data.stats[3].base_stat;
+let ability =answer.data.abilities[0].ability.name;
+let Tyrantrum = new Pokemon( name, sprite, hp, attack ,defense, ability );
+Tyrantrum.display();
+console.log(Tyrantrum);
+return Tyrantrum;
+});
+
+axios.get("http://fizal.me/pokeapi/api/v2/name/entei.json")
+.then(function (answer){
+console.log(answer);
+//let so you can call it later in param
+let name = answer.data.name;
+let sprite = answer.data.sprites.front_default;
+let hp = answer.data.stats[5].base_stat;
+let attack =  answer.data.stats[4].base_stat;
+let defense = answer.data.stats[3].base_stat;
+let ability =answer.data.abilities[0].ability.name
+let Entei = new Pokemon( name, sprite, hp, attack ,defense, ability );
+ Entei.display();
+})
+
+axios.get("http://fizal.me/pokeapi/api/v2/name/pangoro.json")
+.then(function (answer){
+console.log(answer);
+//let so you can call it later in param
+let name = answer.data.name;
+let sprite = answer.data.sprites.front_default;
+let hp = answer.data.stats[5].base_stat;
+let attack =  answer.data.stats[4].base_stat;
+let defense = answer.data.stats[3].base_stat;
+let ability =answer.data.abilities[0].ability.name
+let Pangoro = new Pokemon( name, sprite, hp, attack ,defense, ability );
+Pangoro.display();
+})
+//------------Jodi code end -----------------------------------------
+
   display1(){
     let nameElement = document.getElementById("pkmn");
     nameElement.innerHTML = "Name: " + this.name;
