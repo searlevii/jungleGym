@@ -4,6 +4,8 @@ html{
   background: url(jungle4.gif);
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: helvetica;
+  font-size: 12px;
 }
 #opacity {
   filter: opacity(100%);
