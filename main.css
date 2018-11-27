@@ -1,17 +1,67 @@
-.trainerball   {
-      position: absolute;
-      left: ;
-      right: ;
-      animation: circleAround 3s linear infinite;
-      animation-delay:2s;
+
+html{
+  background: url(forest4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#box{
+  width: 1000px;
+  height: 600px;
+  background-color: white;
+  margin: 20px;
+  position:relative;
+  left: 100px;
+  padding: 10px;
+  filter: opacity(60%);
+  border-radius: 20px;
+
+}
+.circle{
+  width: 150px;
+  height:150px;
+  background-color: white;
+  border-radius: 50%;
+  border: 10px red groove;
+  position: relative;
+  filter: opacity(100%);
+}
+#bigCircle{
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color: red;
+  position:absolute;
+  top: 80px;
+  left: 400px;
+  border: 10px groove black;
+
+
+}
+ #one{
+  left: 150px;
+  animation: circleAround 4s  ;
+}
+ #two{
+   left: 80px;
+   animation: circleAround 4s ;
+ }
+ #three{
+   top: 30px;
+   left: 100px;
+   animation: circleAround 4s;
+ }
+ #four{
+   bottom: 500px;
+   left: 730px;
+   animation: circleAround 4s;
+ }
+#five{
+  bottom:320px;
+  left: 780px;
+  animation: circleAround 4s;
 }
 
-@keyframes  circleAround{
-      from: { transfornm: rotate(0deg) translateX(150px) rotate(0deg);}
-      to: {transfornm: rotate(360deg) translateX(150px) rotate(-360deg);}
-}
-
-
-/* #div/class where pokemon live */{
-      display:none;
-}
+@keyframes circleAround{
+      0% { transform: rotate(0deg) translateX(100px)  ;}
+      100% {transform: rotate(360deg) translateX(10px) ;}
+    }
