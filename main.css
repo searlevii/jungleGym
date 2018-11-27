@@ -1,0 +1,17 @@
+.trainerball   {
+      position: absolute;
+      left: ;
+      right: ;
+      animation: circleAround 3s linear infinite;
+      animation-delay:2s;
+}
+
+@keyframes  circleAround{
+      from: { transfornm: rotate(0deg) translateX(150px) rotate(0deg);}
+      to: {transfornm: rotate(360deg) translateX(150px) rotate(-360deg);}
+}
+
+
+/* #div/class where pokemon live */{
+      display:none;
+}
