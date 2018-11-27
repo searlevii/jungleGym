@@ -1,5 +1,4 @@
 
-
 html{
   background: url(jungle4.gif);
   background-size: cover;
@@ -20,6 +19,7 @@ html{
   padding: 10px;
   border-radius: 20px;
 border: 10px groove black;
+box-shadow: #000000ab 5px;
 }
 .circle{
   width: 150px;
@@ -45,32 +45,48 @@ border: 10px groove black;
 #one{
   left: 140px;
   opacity: 1;
+  animation: circleAround 4s;
 }
 #two{
   left: 80px;
   top: 45px;
   opacity: 1;
+  animation: circleAround 4s;
  }
 #three{
   top: 90px;
   left: 140px;
   opacity: 1;
+  animation: circleAround 4s;
  }
 #four{
   bottom: 500px;
   left: 735px;
   opacity: 1;
+  animation: circleAround 4s;
  }
 #five{
   bottom:250px;
   left: 735px;
   opacity: 1;
+  animation: circleAround 4s;
 }
 #six{
   bottom: 625px;
   left: 795px;
   opacity: 1;
+  animation: circleAround 4s;
 }
+@keyframes circleAround{
+    0% {
+      transform: rotate(0deg) translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(360deg) translateX(10px);
+      opacity: 1;
+    }
+  }
 
 .Rectangle{
   background-color: white;
@@ -79,10 +95,12 @@ border: 10px groove black;
   border: 4px groove #222222;
   position: relative;
 
+
 }
 #Name{
-  top: 50px;
-  left: 170px;
+  top: 30px;
+  left: 140px;
+  width:200px;
 }
 #Ability{
   top: 215px;
@@ -108,7 +126,7 @@ border: 10px groove black;
   width:150px;
   height: 150px;
   position: absolute;
-  top: 110px;
+  top: 100px;
   left:165px;
   border: 4px groove white;
 }
@@ -148,3 +166,4 @@ border: 10px groove black;
     width: 150px;
     object-fit: contain;
   =======
+>>>>>>> 1810a81d17540b0a32b857743102052c4420a481
