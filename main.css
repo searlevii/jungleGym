@@ -1,5 +1,4 @@
 
-
 html{
   background: url(forest4.jpg);
   background-size: cover;
@@ -41,37 +40,49 @@ box-shadow: #000000ab 5px;
   top: 80px;
   left: 400px;
   border: 10px groove black;
-
-
 }
+
+
+
+@keyframes circleAround{
+      0% { transform: rotate(0deg) translateX(100px)  ;}
+      100% {transform: rotate(360deg) translateX(10px) ;}
+    }
+
 #one{
   left: 140px;
   opacity: 1;
+  animation: circleAround 4s;
 }
 #two{
   left: 80px;
   top: 45px;
   opacity: 1;
+  animation: circleAround 4s;
  }
 #three{
   top: 90px;
   left: 140px;
   opacity: 1;
+  animation: circleAround 4s;
  }
 #four{
   bottom: 500px;
   left: 735px;
   opacity: 1;
+  animation: circleAround 4s;
  }
 #five{
   bottom:250px;
   left: 735px;
   opacity: 1;
+  animation: circleAround 4s;
 }
 #six{
   bottom: 625px;
   left: 795px;
   opacity: 1;
+    animation: circleAround 4s;
 }
 
 .Rectangle{
@@ -80,6 +91,7 @@ box-shadow: #000000ab 5px;
   height: 50px;
   border: 4px groove black;
   position: relative;
+
 
 }
 #Name{
@@ -151,3 +163,4 @@ box-shadow: #000000ab 5px;
     width: 150px;
     object-fit: contain;
   =======
+>>>>>>> 1810a81d17540b0a32b857743102052c4420a481
