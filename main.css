@@ -164,6 +164,9 @@ box-shadow: #000000ab 5px;
     height: 100px;
   width: 500px;
     border-radius: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 
     @keyframes circleAround{
